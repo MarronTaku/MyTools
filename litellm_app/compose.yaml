@@ -1,0 +1,11 @@
+services:
+  litellm-proxy:
+    build: ./litellm-proxy
+    container_name: litellm-proxy
+    ports:
+      - "4000:4000"
+    volumes:
+      - ./litellm-proxy/config.yaml:/app/config.yaml
+    command: ["--port", "4000", "--config", "config.yaml"]
+    env_file:
+      - .env
