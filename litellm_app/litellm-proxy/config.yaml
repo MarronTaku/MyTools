@@ -3,6 +3,15 @@ model_list:
     litellm_params:
       model: gemini/gemini-3-flash-preview
       api_key: os.environ/GEMINI_API_KEY
+  - model_name: mistral-tiny
+    litellm_params:
+      model: mistral/mistral-tiny
+      api_key: os.environ/MISTRAL_API_KEY # Please set MISTRAL_API_KEY in your .env file
+  - model_name: groq-mixtral
+    litellm_params:
+      model: groq/llama-3.1-8b-instant
+      api_key: os.environ/GROQ_API_KEY # Please set GROQ_API_KEY in your .env file
 
 litellm_settings:
   set_verbose: True
+  model_auto_routing: true
