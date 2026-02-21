@@ -1,0 +1,23 @@
+
+# NOTE: E2026#1 のライブラリバージョン
+#       https://www.jdla.org/certificate/engineer/
+grad-cam
+matplotlib
+numpy
+opencv-python
+tensorflow
+tf_explain
+torch
+torchinfo
+torchvision
+
+# Jupyter Notebook 関連
+notebook
+ipykernel
+jupyterlab
+
+# 追加
+japanize_matplotlib
+typing_extensions>=4.10.0
+torchviz
+graphviz
